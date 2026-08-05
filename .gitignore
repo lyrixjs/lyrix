@@ -9,4 +9,3 @@ dist-ssr
 .idea
 *.log
 .commandcode
-.github/workflows/deploy.yml
