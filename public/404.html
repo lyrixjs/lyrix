@@ -8,7 +8,7 @@
       // GitHub Pages SPA fallback: redirect deep-links back to the app root.
       // Preserves the requested path in the hash so client routing can take over.
       (function () {
-        var basePath = "/lyrix/";
+        var basePath = "/";
         var l = window.location;
         if (l.pathname === basePath || l.pathname === basePath + "index.html") {
           return;
@@ -19,6 +19,6 @@
     </script>
   </head>
   <body>
-    <p>Redirecting to <a href="/lyrix/">lyrix</a>…</p>
+    <p>Redirecting to <a href="/">lyrix</a>…</p>
   </body>
 </html>
