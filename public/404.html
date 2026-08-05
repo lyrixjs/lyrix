@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lyrix</title>
+    <script>
+      // GitHub Pages SPA fallback: redirect deep-links back to the app root.
+      // Preserves the requested path in the hash so client routing can take over.
+      (function () {
+        var basePath = "/";
+        var l = window.location;
+        if (l.pathname === basePath || l.pathname === basePath + "index.html") {
+          return;
+        }
+        var target = basePath + "#" + l.pathname.slice(basePath.length) + l.search;
+        l.replace(target);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="/">lyrix</a>…</p>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.log
+.commandcode
+.github/workflows/deploy.yml
