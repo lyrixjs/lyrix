@@ -21,7 +21,7 @@ export function Logo({
         }}
       >
         <img
-          src="/lyrix-logo.png"
+          src={`${import.meta.env.BASE_URL}lyrix-logo.png`}
           alt="lyrix logo"
           width={size}
           height={size}

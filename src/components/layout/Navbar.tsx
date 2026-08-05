@@ -34,9 +34,18 @@ export function Navbar() {
     >
       <div className="mx-auto grid h-16 max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-6 md:px-8">
         <a
-          href="/"
+          href={import.meta.env.BASE_URL}
           aria-label="lyrix home"
           className="group justify-self-start"
+          onClick={(e) => {
+            if (
+              window.location.pathname === import.meta.env.BASE_URL &&
+              !window.location.hash
+            ) {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
         >
           <Logo />
         </a>
