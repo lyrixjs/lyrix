@@ -1,6 +1,6 @@
-# lyrix-web
+# lyrix
 
-Marketing website for [lyrix-js](https://github.com/lyrixjs/lyrix): multi-provider lyrics retrieval with AI translation.
+Marketing website for [lyrix-js](https://github.com/lyrixjs/lyrix-js): multi-provider lyrics retrieval with AI translation.
 
 Built with **React + Vite**, **Tailwind CSS**, **shadcn/ui** patterns, **Biome**, and the **Satoshi** typeface.
 
@@ -26,10 +26,10 @@ pnpm dev
 ## Deployment
 
 The site deploys automatically to **GitHub Pages** at
-<https://lyrixjs.github.io/web/> via the `.github/workflows/deploy.yml`
+<https://lyrixjs.github.io/lyrix/> via the `.github/workflows/deploy.yml`
 workflow on every push to `main`.
 
-The Vite `base` is set to `/`.
+The Vite `base` is set to `/lyrix/`.
 
 ## License
 
