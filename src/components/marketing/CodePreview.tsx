@@ -14,7 +14,7 @@ export function CodePreview() {
       <div className="pointer-events-none absolute inset-0 -z-10 aurora-glow opacity-70" />
       <div className="pointer-events-none absolute inset-0 -z-10 bg-grid mask-radial opacity-30" />
 
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
         <SectionHeading
           eyebrow="Examples"
           title="Get going in seconds"
@@ -30,7 +30,7 @@ export function CodePreview() {
             defaultValue={codeSamples[0].id}
             className="flex flex-col items-center"
           >
-            <TabsList className="mb-6 px-1.5 py-1.5">
+            <TabsList className="mb-6 w-full max-w-full justify-start overflow-x-auto px-1.5 py-1.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:w-auto sm:justify-center">
               {codeSamples.map((s) => (
                 <TabsTrigger key={s.id} value={s.id}>
                   {s.label}

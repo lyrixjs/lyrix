@@ -6,7 +6,7 @@ import { SectionHeading } from "./SectionHeading";
 export function FeatureGrid() {
   return (
     <section id="features" className="scroll-mt-24 py-20 md:py-28">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
         <SectionHeading
           eyebrow="Features"
           title="Everything you need to ship lyrics"

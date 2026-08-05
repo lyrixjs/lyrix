@@ -9,8 +9,8 @@ export function CTASection() {
       {/* Soft brand bloom glowing behind the glass */}
       <div className="pointer-events-none absolute inset-x-0 top-1/2 mx-auto h-[26rem] max-w-4xl -translate-y-1/2 rounded-full bg-brand-gradient-3 opacity-25 blur-3xl" />
 
-      <div className="relative mx-auto max-w-7xl px-6 md:px-8">
-        <div className="relative overflow-hidden rounded-[2rem] border border-white/60 bg-white/55 px-6 py-16 text-center shadow-elevated backdrop-blur-2xl md:px-16 md:py-20">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
+        <div className="relative overflow-hidden rounded-[2rem] border border-white/60 bg-white/55 px-5 py-14 text-center shadow-elevated backdrop-blur-2xl sm:px-6 sm:py-16 md:px-16 md:py-20">
           {/* Texture + edge highlight */}
           <div className="pointer-events-none absolute inset-0 bg-grid opacity-[0.12] [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]" />
           <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent" />

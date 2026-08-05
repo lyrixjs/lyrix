@@ -84,8 +84,13 @@
         rgba(37, 151, 253, 0.1),
         transparent 70%
       );
-    background-attachment: fixed;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      background-attachment: fixed;
+    }
   }
 }
 
@@ -112,7 +117,7 @@
   }
 
   .container-px {
-    @apply px-6 md:px-8;
+    @apply px-4 sm:px-6 md:px-8;
   }
 
   .scroll-reveal {

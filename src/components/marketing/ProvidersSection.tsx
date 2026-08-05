@@ -8,7 +8,7 @@ import { SectionHeading } from "./SectionHeading";
 export function ProvidersSection() {
   return (
     <section id="providers" className="scroll-mt-24 py-20 md:py-28">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
         <SectionHeading
           eyebrow="Providers"
           title="Bring your own, or use what's built-in"

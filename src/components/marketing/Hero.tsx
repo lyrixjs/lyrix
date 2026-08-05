@@ -16,10 +16,10 @@ export function Hero() {
       <div className="pointer-events-none absolute -left-24 top-24 -z-10 h-72 w-72 rounded-full bg-rose-300/40 blur-3xl animate-pulse-glow" />
       <div className="pointer-events-none absolute -right-24 top-40 -z-10 h-80 w-80 rounded-full bg-sky-300/40 blur-3xl animate-pulse-glow [animation-delay:1.5s]" />
 
-      <div className="mx-auto max-w-7xl px-6 pb-20 pt-16 md:px-8 md:pt-24 lg:pt-28">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+      <div className="mx-auto max-w-7xl px-4 pb-14 pt-10 sm:px-6 sm:pb-20 sm:pt-16 md:px-8 md:pt-24 lg:pt-28">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <h1 className="animate-fade-up text-balance text-4xl font-black leading-[1.05] tracking-tight md:text-6xl lg:text-[4.5rem]">
+            <h1 className="animate-fade-up text-balance text-3xl font-black leading-[1.1] tracking-tight sm:text-5xl md:text-6xl md:leading-[1.05] lg:text-[4.5rem]">
               Lyrics retrieval,
               <br className="hidden sm:block" />{" "}
               <span className="text-gradient-animated">
@@ -27,12 +27,12 @@ export function Hero() {
               </span>
             </h1>
 
-            <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg [animation-delay:80ms] animate-fade-up">
+            <p className="mt-4 sm:mt-6 max-w-xl text-pretty text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg [animation-delay:80ms] animate-fade-up">
               {site.tagline} Pluggable caching, synced lyrics, and type-safe
               APIs in a tiny, dependency-light package.
             </p>
 
-            <div className="mt-8 flex animate-fade-up flex-col gap-3 sm:flex-row [animation-delay:160ms]">
+            <div className="mt-6 sm:mt-8 flex w-full max-w-xs sm:max-w-none animate-fade-up flex-col gap-2.5 sm:flex-row [animation-delay:160ms]">
               <a href="#examples" className="contents">
                 <Button size="lg" className="w-full sm:w-auto">
                   Get Started
@@ -56,14 +56,14 @@ export function Hero() {
               </a>
             </div>
 
-            <div className="mt-10 w-full max-w-sm animate-fade-up [animation-delay:240ms]">
+            <div className="mt-8 sm:mt-10 w-full max-w-sm animate-fade-up [animation-delay:240ms]">
               <InstallCommand />
             </div>
           </div>
 
-          <div className="relative animate-scale-in [animation-delay:200ms]">
+          <div className="relative animate-scale-in max-w-full overflow-hidden p-1 sm:p-0 [animation-delay:200ms]">
             {/* Glow behind code card */}
-            <div className="pointer-events-none absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-tr from-rose-400/20 via-violet-400/30 to-sky-400/20 blur-2xl" />
+            <div className="pointer-events-none absolute -inset-3 sm:-inset-4 -z-10 rounded-3xl bg-gradient-to-tr from-rose-400/20 via-violet-400/30 to-sky-400/20 blur-2xl" />
             <div className="absolute -inset-2 -z-10 rounded-3xl bg-gradient-to-tr from-rose-200/40 via-violet-200/40 to-sky-200/30 blur-xl" />
 
             <div className="animate-float-slow">

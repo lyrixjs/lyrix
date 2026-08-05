@@ -27,7 +27,7 @@ export function Footer() {
       {/* Top gradient accent line */}
       <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
-      <div className="mx-auto max-w-7xl px-6 py-16 md:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:px-8">
         <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div className="max-w-xs">
             <Logo />
@@ -78,9 +78,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row">
-          <p>
-            {site.license} © {site.year} {site.author}
-          </p>
+          <p>© {site.year} Lyrix.js</p>
         </div>
       </div>
     </footer>

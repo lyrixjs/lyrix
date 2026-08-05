@@ -32,7 +32,7 @@ export function Navbar() {
           : "border-b border-transparent",
       )}
     >
-      <div className="mx-auto grid h-16 max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-6 md:px-8">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 md:grid md:grid-cols-[1fr_auto_1fr] md:px-8">
         <a
           href={import.meta.env.BASE_URL}
           aria-label="lyrix home"
@@ -94,7 +94,7 @@ export function Navbar() {
           type="button"
           aria-label="Open menu"
           onClick={() => setMenuOpen(true)}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border text-foreground transition-colors hover:bg-muted justify-self-end md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border text-foreground transition-colors hover:bg-muted active:bg-muted justify-self-end md:hidden"
         >
           <Menu className="h-5 w-5" />
         </button>
