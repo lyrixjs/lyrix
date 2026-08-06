@@ -16,7 +16,6 @@ const columns = [
     links: [
       { label: "Issues", href: `${site.repo}/issues` },
       { label: "Discussions", href: `${site.repo}/discussions` },
-      { label: "Stargazers", href: `${site.repo}/stargazers` },
     ],
   },
 ];
@@ -28,7 +27,7 @@ export function Footer() {
       <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:px-8">
-        <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
+        <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr]">
           <div className="max-w-xs">
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -66,15 +65,6 @@ export function Footer() {
               </ul>
             </div>
           ))}
-
-          <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/80">
-              Install
-            </h4>
-            <code className="mt-4 block rounded-lg border border-border bg-background px-3 py-2 font-mono text-xs text-foreground shadow-soft">
-              npm install {site.npmPackage}
-            </code>
-          </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row">
