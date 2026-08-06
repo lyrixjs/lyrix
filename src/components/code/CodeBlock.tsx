@@ -41,7 +41,7 @@ export function CodeBlock({
   return (
     <div
       className={cn(
-        "group relative overflow-hidden rounded-2xl border border-border bg-card shadow-soft",
+        "group relative min-w-0 overflow-hidden rounded-2xl border border-border bg-card shadow-soft",
         className,
       )}
     >

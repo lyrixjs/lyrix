@@ -61,19 +61,16 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative animate-scale-in max-w-full overflow-hidden p-1 sm:p-0 [animation-delay:200ms]">
-            {/* Glow behind code card */}
-            <div className="pointer-events-none absolute -inset-3 sm:-inset-4 -z-10 rounded-3xl bg-gradient-to-tr from-rose-400/20 via-violet-400/30 to-sky-400/20 blur-2xl" />
-            <div className="absolute -inset-2 -z-10 rounded-3xl bg-gradient-to-tr from-rose-200/40 via-violet-200/40 to-sky-200/30 blur-xl" />
+          <div className="relative animate-scale-in w-full min-w-0 [animation-delay:200ms]">
+            {/* Glow behind code card, sized to match the card radius on all screens */}
+            <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-tr from-rose-300/40 via-violet-300/40 to-sky-300/40 blur-2xl" />
 
-            <div className="animate-float-slow">
-              <CodeBlock
-                code={codeSamples[0].code}
-                lang={codeSamples[0].lang}
-                caption={codeSamples[0].caption}
-                className="ring-gradient shadow-elevated"
-              />
-            </div>
+            <CodeBlock
+              code={codeSamples[0].code}
+              lang={codeSamples[0].lang}
+              caption={codeSamples[0].caption}
+              className="ring-gradient shadow-elevated"
+            />
           </div>
         </div>
       </div>

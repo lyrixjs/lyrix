@@ -18,8 +18,8 @@ export function ProvidersSection() {
 
         <div className="space-y-10 md:space-y-14">
           {/* Row 1: Built-in LRCLIB (Text Left, Code Right) */}
-          <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-10">
-            <div className="scroll-reveal flex items-start gap-4">
+          <div className="grid grid-cols-[minmax(0,1fr)] items-center gap-6 lg:grid-cols-2 lg:gap-10">
+            <div className="scroll-reveal flex min-w-0 items-start gap-4">
               <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-rose-50 to-violet-50 text-primary ring-1 ring-inset ring-primary/15">
                 <Database className="h-5 w-5" />
               </div>
@@ -46,7 +46,7 @@ export function ProvidersSection() {
               </div>
             </div>
 
-            <div className="scroll-reveal">
+            <div className="scroll-reveal min-w-0">
               <CodeBlock
                 code={providerInterface}
                 lang="typescript"
@@ -57,8 +57,8 @@ export function ProvidersSection() {
           </div>
 
           {/* Row 2: Bring your own (Code Left, Text Right on desktop) */}
-          <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-10">
-            <div className="scroll-reveal order-2 lg:order-1">
+          <div className="grid grid-cols-[minmax(0,1fr)] items-center gap-6 lg:grid-cols-2 lg:gap-10">
+            <div className="scroll-reveal order-2 min-w-0 lg:order-1">
               <CodeBlock
                 code={customProviderExample}
                 lang="typescript"
@@ -67,7 +67,7 @@ export function ProvidersSection() {
               />
             </div>
 
-            <div className="scroll-reveal order-1 flex items-start gap-4 lg:order-2 lg:flex-row-reverse lg:text-right">
+            <div className="scroll-reveal order-1 flex min-w-0 items-start gap-4 lg:order-2 lg:flex-row-reverse lg:text-right">
               <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-violet-50 to-sky-50 text-primary ring-1 ring-inset ring-primary/15">
                 <Plug className="h-5 w-5" />
               </div>
